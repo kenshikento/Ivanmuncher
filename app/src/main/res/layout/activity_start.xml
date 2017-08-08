@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ivan.ivanmuncher.start"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@drawable/background2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fatty Ivans"
+        android:textSize="50dp"
+        />
+
+    <TableLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+        <TableRow
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ham" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 point"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/chicken" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 point"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/salad" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Over"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_marginTop="60dp"
+        android:onClick="startGame"/>
+
+</LinearLayout>
